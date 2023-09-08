@@ -2,10 +2,10 @@
 # PRE SETUP WEBSITE AT https://www.cboe.com/delayed_quotes/spx/quote_table
 # AUTHOR: INCENSING PANDA @ 2023
 
-- sleep: 200
+
 - mouse: 275 311
 - click:
-- sleep: 100
+- sleep: 400
 - keytab: a ctrl
 - sleep: 100
 - typearg: 2
@@ -18,9 +18,19 @@
 - typestr: 9
 - keytab: enter
 - sleep: 200
+
+# change all expiration
+- mouse: 462 462
+- click:
+- sleep: 100
+- keytab: up
+- keytab: enter
+- sleep: 200
+
+# view chain
 - mouse: 527 460
 - click:
-- sleep: 10000
+- sleep: 5000
 
 # download csv
 - keytab: end
@@ -29,8 +39,11 @@
 - sleep: 100
 - mouse: 305 587
 - click:
-- sleep: 3000
+- sleep: 2000
+- keytab: esc
+- sleep: 1000
 
 # reset
 - keytab: home
-- sleep: 100
+- sleep: 1000
+
