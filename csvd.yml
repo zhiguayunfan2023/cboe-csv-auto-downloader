@@ -1,0 +1,36 @@
+# WORK WITH https://github.com/privapps/mkinputs/tree/latest-binaries
+# PRE SETUP WEBSITE AT https://www.cboe.com/delayed_quotes/spx/quote_table
+# AUTHOR: INCENSING PANDA @ 2023
+
+- sleep: 200
+- mouse: 275 311
+- click:
+- sleep: 100
+- keytab: a ctrl
+- sleep: 100
+- typearg: 2
+- keytab: enter
+- sleep: 10000
+
+# chagne to 9 strike price
+- mouse: 385 462
+- click:
+- typestr: 9
+- keytab: enter
+- sleep: 200
+- mouse: 527 460
+- click:
+- sleep: 10000
+
+# download csv
+- keytab: end
+- sleep: 100
+- keytab: pageup
+- sleep: 100
+- mouse: 305 587
+- click:
+- sleep: 3000
+
+# reset
+- keytab: home
+- sleep: 100
